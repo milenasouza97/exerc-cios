@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleVivo - Cadastro</title>
+    </head>
+        <body>
+            <header>
+                <h1>Locação de Autos do Ditinho</h1>
+                <img src="img/carrotop.jfif" alt="Imagem 1" width="300" heigth="200">
+                <p>Há 40 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>
+            </header>
+            <hr>
+            <main>
+              <section>
+                <h3>Análise de cadastro</h3>
+                <p>Preencha os campos abaixo e analisaremis seus dados.<br>Se tudo correto ligaremos para marcar uma visitinha.</p>
+                <form method="post" action="#">
+                   <fieldset>
+                     <legend>Dados pessoais</legend>
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="digite seu nome" required>
+                        <label>Data de Nacismento</label>
+                        <input type="date" name="data_nascimento" required>
+                        <label>Telefone</label>
+                        <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                   </fieldset>
+                   <fieldset>
+                      <legend>CNH</legend>
+                        <label>Número de Registro</label>
+                        <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+                        <label>Validade</label>
+                        <input type="date" name="validade" required>
+                   </fieldset>
+                   <fieldset>  
+                      <legend>Carro</legend>
+                        <label>Modelo do Carro</label>
+                        <select name="carro" required>
+                          <option value="">Escolha um carro</option>
+                          <optgroup label="Volkswagem">
+                            <option value="gol">Gol</option>
+                            <option value="golf">Golf</option>
+                            <option value="fox">Fox</option>
+                          </optgroup>
+                          <optgroup label="Fiat">
+                            <option value="uno">Uno</option>
+                            <option value="siena">Siena</option>
+                            <option value="Palio">Palio</option>
+                          </optgroup>
+                          <optgroup label="Nissan">
+                            <option value="frontier">Frontier</option>
+                            <option value="versa">Versa</option>
+                            <option value="skyline">Skyline GT-R</option>
+                          </optgroup>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Envira dados</button>
+                  </form>
+                </section>
+              </main>
+              <hr>
+              <footer>
+                 <p>Copyright 2023 - Locação de Autos do Ditinho</p>
+              </footer>     
+            </body>
+</html>
